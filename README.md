@@ -22,20 +22,20 @@ acl "trusted" {
 };
 
 options {
-        directory "/var/cache/bind";
-        recursion yes;
-        allow-query { trusted; };
+    directory "/var/cache/bind";
+    recursion yes;
+    allow-query { trusted; };
 
-        forwarders {
-                10.12.0.2; # <-- edit according to your VPC setup, if your VPC CIDR is 192.168.0.0/16, then this should be 192.168.0.2
-        };
+    forwarders {
+        10.12.0.2; # <-- edit according to your VPC setup, if your VPC CIDR is 192.168.0.0/16, then this should be 192.168.0.2
+    };
 
-        forward only;
+    forward only;
 
-        dnssec-enable no;
-        dnssec-validation no;
-        auth-nxdomain no;    # conform to RFC1035
-        listen-on-v6 { any; };
+    dnssec-enable no;
+    dnssec-validation no;
+    auth-nxdomain no;    # conform to RFC1035
+    listen-on-v6 { any; };
 };
 ```
 
