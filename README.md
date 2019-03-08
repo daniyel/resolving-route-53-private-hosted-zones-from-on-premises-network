@@ -69,5 +69,5 @@ options {
 DATE: ---Fri 08 Mar 2019---
  8:24:24.169  ...STARTING...
 Timestamp     A/R Flags if Hostname                               Address                                      TTL
- 8:24:24.200  Add     2  0 myservice.example.internal. 10.12.2.120                                  77
+ 8:24:24.200  Add     2  0 myservice.example.internal.            10.12.2.120                                  77
 ```
